@@ -1,3 +1,7 @@
+if defined?(::Rails::Railtie)
+  require 'acts_as_url/railtie'
+end
+
 module ActsAsUrl
   
   def self.included(base)
