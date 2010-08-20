@@ -104,7 +104,7 @@ module ActsAsUrl
   
   # Escapes all regular expression tokens in a given string.
   def self.escape_regex(regex_str)
-    regex_str.to_s.gsub(/[[\\^$.|?*+()\/]/) { |token_char| '\\' + token_char[0] }
+    regex_str.to_s.gsub(/[\[\]\\^$.|?*+()\/]/) { |token_char| '\\' + token_char[0] }
   end
   
 end
