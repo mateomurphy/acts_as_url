@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Molte Emil Strange Andersen"]
-  s.date = %q{2010-08-19}
-  s.description = %q{This acts_as extension adds the protocol (eg ‘http://’) to a url database column if missing. It also validates the url against a regular expression.}
+  s.date = %q{2010-09-23}
+  s.description = %q{This acts_as extension adds the protocol (eg http) to a url database column if missing. It also validates the url against a regular expression.}
   s.email = %q{molte93@gmail.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "acts_as_url.gemspec",
      "init.rb",
      "lib/acts_as_url.rb",
      "lib/acts_as_url/railtie.rb",

@@ -27,7 +27,7 @@ begin
   Jeweler::Tasks.new do |gemspec|
     gemspec.name = "acts_as_url"
     gemspec.summary = "This acts_as extension adds the protocol to a url"
-    gemspec.description = "This acts_as extension adds the protocol (eg ‘http://’) to a url database column if missing. It also validates the url against a regular expression."
+    gemspec.description = "This acts_as extension adds the protocol (eg http) to a url database column if missing. It also validates the url against a regular expression."
     gemspec.email = "molte93@gmail.com"
     gemspec.authors = ["Molte Emil Strange Andersen"]
   end
