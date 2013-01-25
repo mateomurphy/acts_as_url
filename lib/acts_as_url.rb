@@ -13,7 +13,7 @@ module ActsAsUrl
   
   module ClassMethods
     URL_SUBDOMAINS_PATTERN = '(?:[a-z0-9-]+\.)+'
-    URL_TLD_PATTERN        = '(?:[a-z]{2}|com|org|net|edu|gov|mil|biz|info|mobi|name|aero|jobs|museum)'
+    URL_TLD_PATTERN        = '(?:[a-z]{2}|aero|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|post|pro|tel|travel|xxx)'
     URL_PORT_PATTERN       = '(?::\d{1,5})?'
     EMAIL_NAME_PATTERN     = '[\w.%+-]+'
     
