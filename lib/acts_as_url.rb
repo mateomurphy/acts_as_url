@@ -6,6 +6,7 @@ module ActsAsUrl
   
   def self.included(base)
     base.send(:extend, ClassMethods)
+    base.class_attribute :protocols
   end
   
   mattr_accessor :default_protocols
@@ -16,8 +17,6 @@ module ActsAsUrl
     URL_TLD_PATTERN        = '(?:[a-z]{2}|aero|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|post|pro|tel|travel|xxx)'
     URL_PORT_PATTERN       = '(?::\d{1,5})?'
     EMAIL_NAME_PATTERN     = '[\w.%+-]+'
-    
-    attr_accessor :protocols
     
     def acts_as_url(*attributes)
       self.protocols = attributes.extract_options!
