@@ -45,7 +45,7 @@ class ActsAsUrlTest < Test::Unit::TestCase # ActiveSupport::TestCase
   end
 
   def test_url_validation_when_wrong_tld
-    @item.website = 'example.abc'
+    @item.website = 'example.a'
     assert @item.invalid?
   end
 
