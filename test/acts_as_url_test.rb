@@ -90,8 +90,8 @@ class ActsAsUrlTest < Test::Unit::TestCase # ActiveSupport::TestCase
     assert @item.valid?
   end
 
-  # Convertion tests
-  def test_default_convertion
+  # Conversion tests
+  def test_default_conversion
     @item.website = 'example.com'
     assert_equal 'example.com', @item.website
 
@@ -99,19 +99,19 @@ class ActsAsUrlTest < Test::Unit::TestCase # ActiveSupport::TestCase
     assert_equal 'http://example.com/', @item.website
   end
 
-  def test_custom_convertion
+  def test_custom_conversion
     @item.repository = 'github.com/molte/acts_as_url.git'
     @item.save
     assert_equal 'git://github.com/molte/acts_as_url.git', @item.repository
   end
 
-  def test_convertion_when_protocol_provided
+  def test_conversion_when_protocol_provided
     @item.website = 'https://eksempel.dk'
     @item.save
     assert_equal 'https://eksempel.dk/', @item.website
   end
 
-  def test_convertion_when_blank
+  def test_convertson_when_blank
     @item.website = ''
     @item.save
     assert @item.website.blank?
